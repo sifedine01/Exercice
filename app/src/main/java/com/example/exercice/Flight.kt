@@ -14,4 +14,4 @@ data class Flight(
     val airlineLogoRes: Int,
     val promoCode: String? = null,
     val isFreeMeal: Boolean = false
-)
+) : Serializable

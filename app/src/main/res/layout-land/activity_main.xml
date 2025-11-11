@@ -5,230 +5,247 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:background="@android:color/white"
     tools:context=".MainActivity">
-
     <LinearLayout
         android:orientation="vertical"
         android:id="@+id/head"
-        android:layout_width="match_parent"
-        android:layout_height="260dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
         android:background="@drawable/curved_header"
-        android:padding="16dp"
-        android:layout_weight="1">
+        android:padding="16dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageButton
                 android:id="@+id/btn_back"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="34sp"
+                android:layout_height="34sp"
                 android:src="@drawable/ic_arrow_back"
                 app:tint="@android:color/white"
                 android:layout_alignParentStart="true"
                 android:contentDescription="Back" />
             <ImageButton
                 android:id="@+id/btn_edit"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
                 android:src="@drawable/ic_edit"
                 app:tint="@android:color/white"
                 android:layout_alignParentEnd="true"
                 android:contentDescription="Edit" />
         </RelativeLayout>
-
-        <TextView
-            android:id="@+id/tv_date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="20 December 2022"
-            android:textColor="@android:color/white"
-            android:textSize="16sp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp" />
-
         <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_marginTop="16dp">
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="start">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="DEL"
-                    android:textColor="@android:color/white"
-                    android:textSize="32sp"
-                    android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Delhi International Airport"
-                    android:textColor="@android:color/white"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <ImageView
-                android:layout_width="29dp"
-                android:layout_height="29dp"
-                android:src="@drawable/ic_flight_path"
-                app:tint="@android:color/white"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:contentDescription="Flight path" />
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:gravity="end">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="BLR"
-                    android:textColor="@android:color/white"
-                    android:textSize="32sp"
-                    android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Bengaluru Airport India"
-                    android:textColor="@android:color/white"
-                    android:textSize="12sp" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <TextView
-            android:id="@+id/tv_duration"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="04h 30m"
-            android:textColor="@android:color/white"
-            android:textSize="16sp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="16dp">
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/ic_person"
-                app:tint="@android:color/white"
-                android:contentDescription="Passenger" />
             <TextView
-                android:id="@+id/tv_passenger"
+                android:id="@+id/tv_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="01 Adult"
+                android:text="20 December 2022"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
-                android:layout_marginStart="8dp" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DEL"
+                        android:textColor="@android:color/white"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Delhi International Airport"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="29sp"
+                    android:layout_height="29sp"
+                    android:src="@drawable/ic_flight_path"
+                    app:tint="@android:color/white"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Flight path" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="end">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BLR"
+                        android:textColor="@android:color/white"
+                        android:textSize="32sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bengaluru Airport India"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="04h 30m"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_person"
+                    app:tint="@android:color/white"
+                    android:contentDescription="Passenger" />
+                <TextView
+                    android:id="@+id/tv_passenger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01 Adult"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+
         </LinearLayout>
+
 
     </LinearLayout>
 
     <View
         android:id="@+id/divider2"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/darker_gray"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="10dp"/>
-
-    <LinearLayout
-        android:id="@+id/llFilterOptions"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingBottom="10dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:gravity="center">
-
-        <Button
-            android:id="@+id/btnLowToHigh"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:text="Low to High"
-            android:textSize="12sp"
-            android:textColor="@color/purple"
-            android:layout_marginEnd="4dp"
-            app:backgroundTint="@color/white"
-            app:strokeColor="@color/grey_light"
-            app:strokeWidth="1dp"
-            app:cornerRadius="12dp" />
-
-        <Button
-            android:id="@+id/btnHighToLow"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:text="High to Low"
-            android:textColor="@color/purple"
-            android:layout_marginEnd="4dp"
-            android:textSize="12sp"
-            app:backgroundTint="@color/white"
-            app:strokeColor="@color/grey_light"
-            app:strokeWidth="1dp"
-            app:cornerRadius="12dp" />
-
-        <Button
-            android:id="@+id/btnAirlineType"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:text="Airlines Type"
-            android:textSize="12sp"
-            android:textColor="@color/purple"
-            app:backgroundTint="@color/white"
-            app:strokeColor="@color/grey_light"
-            app:strokeWidth="1dp"
-            app:cornerRadius="12dp" />
-        <Button
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            app:cornerRadius="12dp"
-            android:layout_marginStart="5dp"
-            app:backgroundTint="@color/myBlue"
-            app:icon="@drawable/ic_filter"
-            app:iconTint="@android:color/white"
-            />
-
-    </LinearLayout>
-
-    <View
-        android:id="@+id/divider"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
         android:background="@android:color/darker_gray" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvFlights"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:padding="8dp"
-        tools:listitem="@layout/item_flight" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llFilterOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnLowToHigh"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="Low to High"
+                android:textSize="12sp"
+                android:textColor="@color/purple"
+                android:layout_marginEnd="4dp"
+                app:backgroundTint="@color/white"
+                app:strokeColor="@color/grey_light"
+                app:strokeWidth="1dp"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/btnHighToLow"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="High to Low"
+                android:textColor="@color/purple"
+                android:layout_marginEnd="4dp"
+                android:textSize="12sp"
+                app:backgroundTint="@color/white"
+                app:strokeColor="@color/grey_light"
+                app:strokeWidth="1dp"
+                app:cornerRadius="12dp" />
+
+            <Button
+                android:id="@+id/btnAirlineType"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="Airlines Type"
+                android:textSize="12sp"
+                android:textColor="@color/purple"
+                app:backgroundTint="@color/white"
+                app:strokeColor="@color/grey_light"
+                app:strokeWidth="1dp"
+                app:cornerRadius="12dp" />
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:cornerRadius="12dp"
+                android:layout_marginStart="5dp"
+                app:backgroundTint="@color/myBlue"
+                app:icon="@drawable/ic_filter"
+                app:iconTint="@android:color/white" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/darker_gray" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFlights"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            tools:listitem="@layout/item_flight" />
+
+    </LinearLayout>
 
 </LinearLayout>

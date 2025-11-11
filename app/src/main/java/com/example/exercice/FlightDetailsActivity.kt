@@ -30,7 +30,10 @@ class FlightDetailsActivity : AppCompatActivity() {
     }
 
     private fun bindFlightData(flight: Flight) {
-        binding.ivAirlineLogo.setImageResource(flight.airlineLogoRes)
+        // !! THIS IS THE LINE TO REMOVE !!
+        // We comment it out so it no longer replaces your "img_7" title
+        // binding.ivAirlineLogo.setImageResource(flight.airlineLogoRes)
+
         binding.tvDelCode.text = flight.departureCity
         binding.tvDelAirport.text = getAirportName(flight.departureCity)
         binding.tvBlrCode.text = flight.arrivalCity
