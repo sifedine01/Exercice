@@ -45,7 +45,7 @@ The project is structured into two main fragments hosted by a single activity:
 
 1.  **Clone the repository**:
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
+    gh repo clone sifedine01/Exercice(https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
     ```
 2.  **Open in Android Studio**:
     * Open Android Studio.
