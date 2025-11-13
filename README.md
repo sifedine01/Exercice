@@ -44,9 +44,15 @@ The project is structured into two main fragments hosted by a single activity:
 ## 🚀 How to Run
 
 1.  **Clone the repository**:
+    * Requires the [GitHub CLI](https://cli.github.com/).
     ```bash
-    gh repo clone sifedine01/Exercice(https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
+    gh repo clone sifedine01/Exercice
     ```
+    * Or use HTTPS:
+    ```bash
+    git clone [https://github.com/sifedine01/Exercice.git](https://github.com/sifedine01/Exercice.git)
+    ```
+
 2.  **Open in Android Studio**:
     * Open Android Studio.
     * Select "Open an Existing Project".
@@ -56,3 +62,10 @@ The project is structured into two main fragments hosted by a single activity:
     * Click the "Run" button (▶) and select an emulator or physical device.
 
     > **Note:** This layout is designed for a split-screen view, so it will look best on a tablet or a phone in **landscape mode**.
+
+---
+
+## 👥 Contributors
+
+* Add contributors here!
+    * Example: `[@sifedine01](https://github.com/sifedine01)`
